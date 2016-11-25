@@ -15,24 +15,22 @@ body{
     width: 200px;
     margin: 10px;
 }
-.list-menu {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    float: right;
+    float:right;
 }
 header li{
     display: inline-block; 
+    margin-top: 15px;
 }
 header li a{
     text-decoration: none;
-    color: #bcaba8;
+    color:#C0C0C0;
     display: block;
     padding: 10px;
     font-size: 12px;
-}
-header li a:hover{
-    border: 1px solid #bcaba8;
 }
 /*----------SECTION------------------------------------*/
 section{
@@ -83,13 +81,10 @@ section{
     color: #fff;
     border: none;
 }
-.slide button:hover{
-    background-color: #000;
-}
 /*----------FOOTER------------------------------------*/
 footer{
     color: #bcaba8;
-    padding: 10px;
+    padding: 15px;
 }
 footer a{
  text-decoration: none;   
@@ -107,3 +102,33 @@ footer a{
 @media(max-width:380px){
     .logo{width: 120px;}
 }
+/*---------------BOTTON-----*/
+button {
+ border: none;
+ background:#D3D3D3;
+ font-size: 18px;
+ border-radius: 10px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+button:before {
+ content:'';
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 0px;
+ height:39px;
+ background: rgba(255,255,255,0.4);
+ border-radius: 5px;
+ transition: all 2s ease;
+}
+button:hover:before {
+ width: 100%;
+}
+
+.dos{
+  height:39px;   
+}
+
+
